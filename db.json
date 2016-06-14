@@ -1,0 +1,82 @@
+{
+    "users": [
+        {
+            "id": 0,
+            "firstName": "Amy",
+            "lastName": "Miller",
+            "roleIds": [1]
+        },
+        {
+            "id": 1,
+            "firstName": "Blake",
+            "lastName": "Smith",
+            "roleIds": [2]
+        },
+        {
+            "id": 2,
+            "firstName": "Catherine",
+            "lastName": "Lee",
+            "roleIds": [1]
+        },
+        {
+            "id": 3,
+            "firstName": "David",
+            "lastName": "Gomez",
+            "roleIds": [2]
+        },
+        {
+            "id": 4,
+            "firstName": "Elisabeth",
+            "lastName": "Jones",
+            "roleIds": [2]
+        },
+        {
+            "id": 5,
+            "firstName": "Francis",
+            "lastName": "Johnson",
+            "roleIds": [1]
+        },
+        {
+            "id": 6,
+            "firstName": "Gary",
+            "lastName": "Smith",
+            "roleIds": [2]
+        },
+        {
+            "id": 7,
+            "firstName": "Hanna",
+            "lastName": "Harper",
+            "roleIds": [2]
+        },
+        {
+            "id": 8,
+            "firstName": "Ivan",
+            "lastName": "Graves",
+            "roleIds": [1]
+        },
+        {
+            "id": 9,
+            "firstName": "Jane",
+            "lastName": "Thompson",
+            "roleIds": [1]
+        }
+    ],
+    "roles": [
+        {
+            "id": 0,
+            "name": "admin"
+        },
+        {
+            "id": 1,
+            "name": "general"
+        },
+        {
+            "id": 2,
+            "name": "visitor"
+        },
+        {
+            "id": 3,
+            "name": "editor"
+        }
+    ]
+}

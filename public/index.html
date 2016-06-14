@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON Server Trials</title>
+</head>
+<body>
+<div ng-controller="MainCtrl">
+    <div>
+        <h1>Users</h1>
+        <table>
+            <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Role</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="u in users">
+                <td>{{u.firstName}}</td>
+                <td>{{u.lastName}}</td>
+                <td>{{u.roleIds}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <br><br>
+    <div>
+        <h1>Roles</h1>
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="role in roles">
+                <td>{{role.id}}</td>
+                <td>{{role.name}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.11/angular.js"></script>
+<script>
+    angular.module('app',[ ]).controller('MainCtrl',['$scope', '$http', function ($scope, $http) {
+
+            $http.get('/users').then(function(res){
+                $scope.users = res.data;
+            });
+
+            $http.get('/roles').then(function(res){
+                $scope.roles = res.data;
+            });
+        }]);
+</script>
+</body>
+</html>
